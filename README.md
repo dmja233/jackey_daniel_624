@@ -1,2 +1,2 @@
 # jackey_daniel_624
-LIS624
+###Daniel Jackey's LIS624 Repository 
