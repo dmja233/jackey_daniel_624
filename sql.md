@@ -70,14 +70,16 @@ Result: to quit MySQL
         title varchar(150) not null,
         copyright year not null,
         primary key (id)
-);```
+);
+```
 Result: Creates a new table in the database with the defined rows above (eg. id, author, etc)
 
 ```insert into books (author, title, copyright) values
 ('Jennifer Egan', 'The Candy House', '2022'),
 ('Imbolo Mbue', 'How Beautiful We Were', '2021'),
 ('Lydia Millet', 'A Children\'s Bible', '2020'),
-('Julia Phillips', 'Disappearing Earth', '2019');```
+('Julia Phillips', 'Disappearing Earth', '2019');
+```
 Result: Inputs data into the database table
 
 ```select * from books;```
