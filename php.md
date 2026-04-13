@@ -11,8 +11,8 @@ Copyright (c) The PHP Group
 Zend Engine v4.3.6, Copyright (c) Zend Technologies
 with Zend OPcache v8.3.6, Copyright (c), by Zend Technologies
 
-# No errors encountered. 
+### No errors encountered. 
 
-# No changes in Apache noticed...
+### No changes in Apache noticed...
 
-# I was surprised that you could easily publish a page to the web with your server-side config if you aren't careful. 
+### I was surprised that you could easily publish a page to the web with your server-side config if you aren't careful. 
