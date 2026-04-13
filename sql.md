@@ -1,8 +1,14 @@
-sudo apt install mysql-server
+## Steps/How to Install & use MySQL
+
+'''sudo apt install mysql-server'''
 
 Result: Install a bunch of packages related to an SQL database.
 
-apt policy mysql-server
+'''apt policy mysql-server'''
+
+Result: check the installation status and version availability of the MySQL server package
+
+Example:
 mysql-server:
   Installed: 8.0.45-0ubuntu0.24.04.1
   Candidate: 8.0.45-0ubuntu0.24.04.1
@@ -14,9 +20,13 @@ mysql-server:
      8.0.36-2ubuntu3 500
         500 http://us-east5.gce.archive.ubuntu.com/ubuntu noble/main amd64 Packages
 
-mysql --version (Does the same thing apparently)
+'''mysql --version''' 
+Result: Does the same thing as apt policy mysql-server
 
-systemctl status mysql (check for service running)
+'''systemctl status mysql''' 
+
+Result: check for MySQL service running
+Example:
 ● mysql.service - MySQL Community Server
      Loaded: loaded (/usr/lib/systemd/system/mysql.service; enabled; preset: enabled)
      Active: active (running) since Sun 2026-03-15 18:15:46 UTC; 1min 13s ago
@@ -32,23 +42,14 @@ systemctl status mysql (check for service running)
 Mar 15 18:15:45 spring2026 systemd[1]: Starting mysql.service - MySQL Community Server...
 Mar 15 18:15:46 spring2026 systemd[1]: Started mysql.service - MySQL Community Server.
 
-sudo mysql_secure_installation
-(takes you through a series of security configurations such as removing remote root access)
+'''sudo mysql_secure_installation'''
+Result: takes you through a series of security configurations such as removing remote root access
 
-sudo mysql -u root (logs into sql)
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 12
-Server version: 8.0.45-0ubuntu0.24.04.1 (Ubuntu)
+'''sudo mysql -u root'''
+Result: logs into sql
 
-Copyright (c) 2000, 2026, Oracle and/or its affiliates.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> show databases;
+'''mysql> show databases;'''
+Result: shows all databases
 +--------------------+
 | Database           |
 +--------------------+
@@ -59,26 +60,31 @@ mysql> show databases;
 +--------------------+
 4 rows in set (0.01 sec)
 
-mysql> \q (to quit)
+'''mysql> \q'''
+Result: to quit MySQL
 
 
-create table books (
+'''create table books (
         id int unsigned not null auto_increment,
         author varchar(150) not null,
         title varchar(150) not null,
         copyright year not null,
         primary key (id)
-);
+);'''
+Result: Creates a new table in the database with the defined rows above (eg. id, author, etc)
 
-insert into books (author, title, copyright) values
+'''insert into books (author, title, copyright) values
 ('Jennifer Egan', 'The Candy House', '2022'),
 ('Imbolo Mbue', 'How Beautiful We Were', '2021'),
 ('Lydia Millet', 'A Children\'s Bible', '2020'),
-('Julia Phillips', 'Disappearing Earth', '2019');
+('Julia Phillips', 'Disappearing Earth', '2019');'''
+Result: Inputs data into the database table
 
-select * from books;
+'''select * from books;'''
+Result: retrieve all columns and all rows from the table books
 
-sudo apt install php-mysql (to install PHP support for mysql)
+'''sudo apt install php-mysql'''
+Result: to install PHP support for MySQL
 
 
 
