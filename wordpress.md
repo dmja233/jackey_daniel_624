@@ -2,6 +2,15 @@
 
 1. sudo apt install php-curl php-xml php-imagick php-mbstring php-zip php-intl
 2. As always, restart Apache
+3. sudo wget https://wordpress.org/latest.zip
+   sudo unzip latest.zip
+4. Create DB user and a database in MySQL
+5. Grant DB user privileges to the database
+6. Change directory to /wordpress
+7. sudo cp wp-config-sample.php wp-config.php
+   sudo nano wp-config.php
+8. Update config file with db and db user
+9. Web to domain/IP /wordpress to finalize setup
 
 ## Wordpress Login
 
