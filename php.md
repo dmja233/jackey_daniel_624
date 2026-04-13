@@ -1,15 +1,15 @@
-# to install php:
+# Install php
 
-sudo apt install php libapache2-mod-php
-sudo systemctl restart apache2
+```sudo apt install php libapache2-mod-php```
+```sudo systemctl restart apache2```
 
 Result: This installs the php engine and dependencies.
 
-## The version of PHP I am running:
-# PHP 8.3.6 (cli) (built: Jan 27 2026 03:09:47) (NTS)
-# Copyright (c) The PHP Group
-# Zend Engine v4.3.6, Copyright (c) Zend Technologies
-#with Zend OPcache v8.3.6, Copyright (c), by Zend Technologies
+## The version of PHP I am running
+PHP 8.3.6 (cli) (built: Jan 27 2026 03:09:47) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.6, Copyright (c) Zend Technologies
+with Zend OPcache v8.3.6, Copyright (c), by Zend Technologies
 
 # No errors encountered. 
 
