@@ -1,10 +1,10 @@
 ## Steps/How to Install & use MySQL
 
-'''sudo apt install mysql-server'''
+```sudo apt install mysql-server```
 
 Result: Install a bunch of packages related to an SQL database.
 
-'''apt policy mysql-server'''
+```apt policy mysql-server```
 
 Result: check the installation status and version availability of the MySQL server package
 
@@ -20,10 +20,10 @@ mysql-server:
      8.0.36-2ubuntu3 500
         500 http://us-east5.gce.archive.ubuntu.com/ubuntu noble/main amd64 Packages
 
-'''mysql --version''' 
+```mysql --version``` 
 Result: Does the same thing as apt policy mysql-server
 
-'''systemctl status mysql''' 
+```systemctl status mysql``` 
 
 Result: check for MySQL service running
 Example:
@@ -42,13 +42,13 @@ Example:
 Mar 15 18:15:45 spring2026 systemd[1]: Starting mysql.service - MySQL Community Server...
 Mar 15 18:15:46 spring2026 systemd[1]: Started mysql.service - MySQL Community Server.
 
-'''sudo mysql_secure_installation'''
+```sudo mysql_secure_installation```
 Result: takes you through a series of security configurations such as removing remote root access
 
-'''sudo mysql -u root'''
+```sudo mysql -u root```
 Result: logs into sql
 
-'''mysql> show databases;'''
+```mysql> show databases;```
 Result: shows all databases
 +--------------------+
 | Database           |
@@ -60,30 +60,30 @@ Result: shows all databases
 +--------------------+
 4 rows in set (0.01 sec)
 
-'''mysql> \q'''
+```mysql> \q```
 Result: to quit MySQL
 
 
-'''create table books (
+```create table books (
         id int unsigned not null auto_increment,
         author varchar(150) not null,
         title varchar(150) not null,
         copyright year not null,
         primary key (id)
-);'''
+);```
 Result: Creates a new table in the database with the defined rows above (eg. id, author, etc)
 
-'''insert into books (author, title, copyright) values
+```insert into books (author, title, copyright) values
 ('Jennifer Egan', 'The Candy House', '2022'),
 ('Imbolo Mbue', 'How Beautiful We Were', '2021'),
 ('Lydia Millet', 'A Children\'s Bible', '2020'),
-('Julia Phillips', 'Disappearing Earth', '2019');'''
+('Julia Phillips', 'Disappearing Earth', '2019');```
 Result: Inputs data into the database table
 
-'''select * from books;'''
+```select * from books;```
 Result: retrieve all columns and all rows from the table books
 
-'''sudo apt install php-mysql'''
+```sudo apt install php-mysql```
 Result: to install PHP support for MySQL
 
 
