@@ -1,3 +1,7 @@
+## What is a LAMP Stack:
+
+A LAMP stack (Linux, Apache, MySQL, PHP) is a collection of open source bundles used to build hosted websites. Each have their own use in a dynamic website, and much of the Internet today uses this collection of open source software.
+
 ## To install Apache:
 ```sudo apt install apache2```
 ```sudo apt install w3m```
