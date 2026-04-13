@@ -64,7 +64,8 @@ Result: shows all databases
 Result: to quit MySQL
 
 
-```create table books (
+```
+create table books (
         id int unsigned not null auto_increment,
         author varchar(150) not null,
         title varchar(150) not null,
