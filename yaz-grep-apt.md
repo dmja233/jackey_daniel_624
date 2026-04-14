@@ -8,7 +8,8 @@ SSH via browser because SSH with Putty isn't working right
 SSH keys not working right?
 
 ## YAZ/YAZ Client
-*This is the weird syntax where the operator comes before the terms, like @and @attr 1=4 "information" @attr 1=21 "library science
+* ```yaz-client``` connects to a library database to search the database for resources.
+* This is the weird syntax where the operator comes before the terms, like @and @attr 1=4 "information" @attr 1=21 "library science
 * 1=4 is for Title, 1=21 is for Subject, and 1=1 is for Author
 * Use ```yaz-marcdump``` to convert MARC files into JSON
 * ```Open``` to connect to a Library OPAC
@@ -19,15 +20,16 @@ SSH keys not working right?
 * 
 
 ## Apt
-* ```Apt show```  to Result: see details
+* ```Apt show```  to see details of apt
 * ```dpkg``` to download .deb files
 * ```sudo dpkg --purge``` to remove files
 * ```sudo apt autoremove``` to remove dependancies
+* ```apt update``` to update/upgrade in conjunction with ```apt upgrade```
 
 ## Grep
 * ```grep``` is a command to do advanced searching of the content of text files
 * ```i``` Ignore case
-* ```v``` inverse searce
+* ```v``` inverse search
 * ```c``` count
 * ```w``` whole words only
 * ```n``` line number
