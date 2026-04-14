@@ -6,6 +6,9 @@ sudo unzip omeka-3.1.2.zip
 ```
 * ```sudo apt install imagemagick``` installs ImageMagick, utilities to work with photo files. Omeka uses ImageMagick to create thumbnail images
 * ```sudo a2enmod rewrite``` Apache module to rewrite URLs
+
+#### Must change ownership and mode
+* ```sudo chown -R www-data:www-data /var/www/html/omeka``` changes ownership 
 * ```chmod``` change mode changes file permissions
 * ```-R``` Recursive applies the change to every file and  subfolder inside directory
 * ```g+w``` Group & Write lets anyone in the file's assigned group edit or delete  files
