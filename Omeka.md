@@ -11,8 +11,6 @@ sudo unzip omeka-3.1.2.zip
 * ```g+w``` Group & Write lets anyone in the file's assigned group edit or delete  files
 * ```*``` Means everything in the folder
 
-*: A wildcard meaning "everything in this folder."
-
 ## Credentials
 User: omeka
 Pass: Same pass
@@ -20,7 +18,9 @@ Pass: Same pass
 ## Notes
 * Omeka admin dashboard has a very similar feel to WordPress.
 * ImageMagik and a2enmod rewrite are required for Omeka.
-* A db user and db table is needed for Omeka 
+* A db user and db table is needed for Omeka
+* Make sure to use Omeka Classic not Omeka S
+* From before, make sure the ```zip``` utility is installed
 
 
 ## Issues
