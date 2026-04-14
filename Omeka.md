@@ -35,4 +35,5 @@ UID          PID    PPID  C STIME TTY          TIME CMD
 root     3988881 3988880  0 23:14 pts/1    00:00:01 apt install imagemagick
 daniel_jackey@spring2026:~$ ^C
 daniel_jackey@spring2026:~$ sudo kill 3988881
-daniel_jackey@spring2026:~$ sudo apt install imagemagick```
+daniel_jackey@spring2026:~$ sudo apt install imagemagick
+```
