@@ -4,7 +4,7 @@
 sudo wget https://github.com/omeka/Omeka/releases/download/v3.1.2/omeka-3.1.2.zip
 sudo unzip omeka-3.1.2.zip
 ```
-*```sudo apt install imagemagick``` installs ImageMagick, utilities to work with photo files. Omeka uses ImageMagick to create thumbnail images
+* ```sudo apt install imagemagick``` installs ImageMagick, utilities to work with photo files. Omeka uses ImageMagick to create thumbnail images
 * ```sudo a2enmod rewrite``` Apache module to rewrite URLs
 * ```chmod``` change mode changes file permissions
 * ```-R``` Recursive applies the change to every file and  subfolder inside directory
