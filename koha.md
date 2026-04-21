@@ -3,9 +3,9 @@
 Koha's modules include: Administration, Patron management, Cash management, Circulation, Cataloging, Course reserves, Serials, Acquisitions, Reports, and OPAC.
 
 1. ```sudo apt autoremove -y && sudo apt clean``` to remove packages that were automatically installed and clear out the local repository.
-2.a ```sudo apt install apt-transport-https ca-certificates curl``` 
-2.b ```sudo mkdir -p --mode=0755 /etc/apt/keyrings``` to make a new directory for Koha.
-2.c ```sudo curl -fsSL https://debian.koha-community.org/koha/gpg.asc -o /etc/apt/keyrings/koha.asc``` to download Koha and connect to Koha repositories that are remote.
+2.  ```sudo apt install apt-transport-https ca-certificates curl``` 
+* ```sudo mkdir -p --mode=0755 /etc/apt/keyrings``` to make a new directory for Koha.
+* ```sudo curl -fsSL https://debian.koha-community.org/koha/gpg.asc -o /etc/apt/keyrings/koha.asc``` to download Koha and connect to Koha repositories that are remote.
 3. root in with ```sudo su```
 4. Copy and paste ```tee /etc/apt/sources.list.d/koha.sources <<EOF```
 ```Types: deb```
