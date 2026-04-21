@@ -1,19 +1,9 @@
 ## Installing Koha
 ### What is Koha?
-Koha's modules include:
-* Administration
-* Patron management
-* Cash management
-* Circulation
-* Cataloging
-* Course reserves
-* Serials
-* Acquisitions
-* Reports
-* OPAC
+Koha's modules include: Administration, Patron management, Cash management, Circulation, Cataloging, Course reserves, Serials, Acquisitions, Reports, and OPAC.
 
-* ```sudo apt autoremove -y && sudo apt clean``` to remove packages that were automatically installed and clear out the local repository.
-* ```sudo apt install apt-transport-https ca-certificates curl```
+1. ```sudo apt autoremove -y && sudo apt clean``` to remove packages that were automatically installed and clear out the local repository.
+2. ```sudo apt install apt-transport-https ca-certificates curl```
 ```sudo mkdir -p --mode=0755 /etc/apt/keyrings```
 ```sudo curl -fsSL https://debian.koha-community.org/koha/gpg.asc -o /etc/apt/keyrings/koha.asc``` to download Koha and connect to Koha repositories that are remote.
 * root in with ```sudo su```
@@ -24,7 +14,8 @@ Koha's modules include:
 ```Components: main```
 ```Signed-By: /etc/apt/keyrings/koha.asc```
 ```EOF```
-
+* exit root
+* 
 
 
 
