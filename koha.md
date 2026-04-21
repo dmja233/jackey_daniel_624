@@ -47,6 +47,8 @@ Koha's modules include: Administration, Patron management, Cash management, Circ
 ## Issues
 * tmux not installed. Solve: ran ```sudo apt install tmux -y```
 * ```/etc/koha/koha-sites.conf``` did not open the config file. Tried Sudo Nano, but Nano was not installed. Solve: ```sudo apt install nano``` and run ``` sudo nano /etc/koha/koha-sites.conf```
+* Initall web to 34.162.23.36:8081 was unreachable. The issue was an incorrect tag in the firewall rule. Solve: Replace the target tag of 'koha-opac-8081' with 'koha-staff-8081' as that is what was defined in the VM config.
+* Issue deleting circulation history. Solve: Koha documentation led me to the bulk anonymize tool and set the date to delete all history older than tomorrow. 
 
 ## Daniel Specific Notes
 * Got this error and unsure why ```DBD::mysql::db do failed: Cannot add or update a child row: a foreign key constraint fails (`koha_bibliolib`.`borrowers`, CONSTRAINT `borrowers_ibfk_1` FOREIGN KEY (`categorycode`) REFERENCES `categories` (`categorycode`)) at /usr/share/koha/lib/C4/Installer.pm line 605.```
